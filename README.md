@@ -11,7 +11,6 @@ Benvenuto nel mio repository di pentesting! Qui troverai una raccolta dei miei w
   - [TryHackMe](#tryhackme)
   - [Hack The Box](#hack-the-box)
 - [Guide](#guide)
-- [Risorse](#risorse)
 
 ---
 
