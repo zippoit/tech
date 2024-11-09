@@ -12,7 +12,9 @@ L'obiettivo di questo repository è documentare le mie esperienze e aiutare altr
 - [Writeups](#writeups)
   - [TryHackMe](#tryhackme)
   - [Hack The Box](#hack-the-box)
-- [Guide](#guide)
+- [Guide](Guide/)
+  - [Raccolta link](Guide/Raccolta%20link.md): Una raccolta di link utili per tutte le fasi del pentesting, con una breve descrizione per ciascuno.
+
 
 ---
 
