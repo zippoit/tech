@@ -1,8 +1,5 @@
-# Tiziano's Pentesting Repository
 
-Benvenuto nel mio repository di pentesting! 
 Questo spazio raccoglie writeups per le piattaforme **TryHackMe** e **Hack The Box**, oltre a guide e risorse utili per il pentesting. 
-L'obiettivo di questo repository è documentare le mie esperienze e aiutare altri appassionati di sicurezza informatica a migliorare le proprie competenze.
 
 ---
 
