@@ -6,7 +6,7 @@
 - [Find email addresses in seconds • Hunter (Email Hunter)](https://hunter.io/)
 - [GitHub - laramies/theHarvester: E-mails, subdomains and names Harvester - OSINT](https://github.com/laramies/theHarvester)
 
-###Other
+### Other
 - [Sn1per - Automated Pentesting Tool](https://github.com/1N3/Sn1per)
 
 ### Windows
@@ -145,3 +145,62 @@
 - [Pentesting_Active_directory - XMind - Mind Mapping Software](https://www.xmind.net/m/5dypm8/#)
 - [GitHub - samratashok/nishang: Nishang - Offensive PowerShell for red team, penetration testing and offensive security.](https://github.com/samratashok/nishang)
 
+### Wifi Hack
+- [Creazione Fake Access Point](https://www.google.it/amp/s/batysbase.com/creazione-di-un-fake-access-point-con-airbase-ng/amp/)
+- [PwnSTAR: Fake Access Point in Pochi Clic](http://www.html.it/articoli/pwnstar-fake-access-point-in-pochi-clic-2/)
+- [Craccare Password WiFi con Chiave WPA2 Parte 4 di 6](http://www.hackerwebsecurity.com/craccare-password-wifi-con-chiave-wpa2-parte-4-di-6/)
+- [Fern Wifi Cracker: Wireless Security Audit Tools](https://securityonline.info/fern-wifi-cracker-wireless-security-audit-tools/)
+- [Craccare una WPA / WPA2 con Aircrack – NG (Linux)](https://infofreeflow.noblogs.org/post/2008/02/20/craccare-una-wpa-wpa2-con-aircrack-ng-linux/)
+- [WIFI WPA(2) Recover | Online Hash Crack](https://www.onlinehashcrack.com/wifi-wpa-rsna-psk-crack.php)
+- [DevHack - Creare un Access Point per Intercettare Dati](http://devhack.altervista.org/creare-gemello-malvagio-access-point-per-intercettare-dati-evil-twin-access-point/)
+- [Aircrack-ng: A Cosa Serve e Utilizzo](http://www.html.it/pag/18085/aircrack-ng/)
+- [Evil Twin: Guida Completa con Kali Linux e Fluxion](https://www.google.it/amp/s/www.howorks.org/2017/01/evil-twin-guida-completa-kali-fluxion/amp/)
+- [WiFi-Pumpkin: Rogue Wi-Fi Access Point Attack](https://github.com/P0cL4bs/WiFi-Pumpkin)
+- [Wifiphisher: The Rogue Access Point Framework](https://github.com/wifiphisher/wifiphisher)
+- [Automated Evil Twin Attack: Infernal-Twin](https://n0where.net/automated-evil-twin-attack)
+- [KRACK Attacks Test AP](https://github.com/vanhoefm/krackattacks-test-ap-ft)
+- [Tuttohacking | Craccare Reti Wifi con Aircrack-ng](http://www.tuttohacking.it/guida%20aircrack-ng.html)
+- [Online Hash Crack](https://www.onlinehashcrack.com/)
+- [RoguePortal/README.md at GitHub](https://github.com/vincenzogianfelice/RoguePortal/blob/master/README.md)
+- [Fluxion: Remake of Linset](https://github.com/FluxionNetwork/fluxion)
+- [Airgeddon: Multi-use Bash Script for Linux](https://github.com/v1s1t0r1sh3r3/airgeddon)
+- [Kismet](https://www.kismetwireless.net/)
+- [Bettercap and the PMKID Client-Less Attack](https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/#.XGUsG5SMxYE.reddit)
+
+### Wordlists
+- [SecLists: A Collection of Security Tester's Lists](https://github.com/danielmiessler/SecLists)
+
+## Strumenti di Penetration Testing
+- [GitHub - sc0tfree/updog](https://github.com/sc0tfree/updog)
+- [GitHub - SecureAuthCorp/impacket](https://github.com/SecureAuthCorp/impacket)
+- [GitHub - Hackplayers/evil-winrm](https://github.com/Hackplayers/evil-winrm)
+- [GitHub - kgretzky/evilginx2](https://github.com/kgretzky/evilginx2)
+- [GitHub - infosecn1nja/Red-Teaming-Toolkit](https://github.com/infosecn1nja/Red-Teaming-Toolkit)
+- [GitHub - esidate/pentesting-active-directory](https://github.com/esidate/pentesting-active-directory)
+- [Samy Kamkar: PoisonTap](https://samy.pl/poisontap/)
+
+## Risorse per la Sicurezza e Cybersecurity
+- [MITRE ATT&CK®](https://attack.mitre.org/)
+- [What Are Living Off the Land Attacks? - LogRhythm](https://logrhythm.com/blog/what-are-living-off-the-land-attacks/)
+- [100 Hacking Tools and Resources | HackerOne](https://www.hackerone.com/blog/100-hacking-tools-and-resources)
+- [Cyber Defense e-Magazines](http://www.cyberdefensemagazine.com/e-magazines/)
+- [15 open-source cybersecurity tools you'll wish you'd known earlier - Help Net Security](https://www.helpnetsecurity.com/2024/01/04/open-source-cybersecurity-tools/)
+
+## Strumenti di Enumeraione e Sfruttamento
+- [vah13/extractTVpasswords · GitHub](https://github.com/vah13/extractTVpasswords/find/master?q=)
+- [curl POST examples · GitHub](https://gist.github.com/subfuzion/08c5d85437d5d4f00e58)
+- [DNS & Web Enumeration Reference](https://delta.navisec.io/web-enumeration-reference/)
+- [Home - PingCastle](https://www.pingcastle.com/)
+
+## Formazione e Risorse CTF
+- [My HackTheBox CTF Methodology - From fresh box to root!](https://0x00sec.org/t/my-hackthebox-ctf-methodology-from-fresh-box-to-root/13980)
+- [Network Penetration Testing: La Checklist Completa | Hackerjournal.it](https://hackerjournal.it/2809/network-penetration-testing-la-checklist-completa/)
+
+## Notizie e Aggiornamenti
+- [New Windows zero-day with public exploit lets you become an admin](https://www.bleepingcomputer.com/news/microsoft/new-windows-zero-day-with-public-exploit-lets-you-become-an-admin/)
+- [Home - CERT Nazionale Italia](https://certnazionale.it/)
+- [Have I Been Pwned](https://haveibeenpwned.com/)
+
+## Tools e Risorse per Sviluppatori
+- [Tools - Salvatore Fresta](https://www.salvatorefresta.net/tools/)
+- [msfgui « Thoughts on Security](https://www.scriptjunkie.us/msfgui/)
