@@ -3,7 +3,7 @@
 
 # Introduzione
 
-## Sistema operativo
+## Sistema operativo
 
 Windows
 
