@@ -234,8 +234,7 @@ Ho preso gli utenti significativi ottenuti dallo step precedente e li ho messi n
 
 Per vedere se possono ottenere un ticket di autenticazione senza password
 
-## Impacket
-GetNPUsers.py
+## Impacket GetNPUsers.py
 
 ```bash
 python3 /opt/impacket/examples/GetNPUsers.py spookysec.local/ -no-pass -usersfile users.txt                                                        2 ⨯  
