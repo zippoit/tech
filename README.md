@@ -9,8 +9,8 @@ Questo spazio raccoglie writeups per le piattaforme **TryHackMe** e **Hack The B
 - [Writeups](#writeups)
   - [TryHackMe](#tryhackme)
   - [Hack The Box](#hack-the-box)
-- [Guide](Guide_e_risorse/)
-  - [Raccolta link](Guide_e_risorse/Raccolta%20link.md): Una raccolta di link utili per tutte le fasi del pentesting, con una breve descrizione per ciascuno.
+- [Guide](Guide%20e%20risorse/)
+  - [Raccolta link](Guide%20e%20risorse/Raccolta%20link.md): Una raccolta di link utili per tutte le fasi del pentesting, con una breve descrizione per ciascuno.
 
 
 ---
