@@ -1,4 +1,0 @@
-# Nmap 7.94SVN scan initiated Sun Nov 24 07:56:56 2024 as: nmap -sC -sV --script=vuln -oA output 10.10.145.160
-Host: 10.10.145.160 ()	Status: Up
-Host: 10.10.145.160 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.9 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/, 720/filtered/tcp/////, 3322/filtered/tcp//active-net///, 4111/filtered/tcp//xgrid///, 8333/filtered/tcp//bitcoin///	Ignored State: closed (994)
-# Nmap done at Sun Nov 24 07:57:58 2024 -- 1 IP address (1 host up) scanned in 62.21 seconds
