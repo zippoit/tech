@@ -17,5 +17,4 @@ Breve introduzione alla macchina:
 ### Passo 1: Ricognizione
 ```bash\
 nmap -sC -sV -oN ./nmap/initial-scan.txt 10.10.10.X\
-}
 ```
