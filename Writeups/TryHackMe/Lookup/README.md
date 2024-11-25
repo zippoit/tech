@@ -1,4 +1,4 @@
-![[Pasted image 20241125222811.png]]
+(images/Pasted image 20241125222811.png)
 
 ## Introduzione
 - **Difficoltà:** Easy
