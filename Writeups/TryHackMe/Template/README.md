@@ -1,20 +1,19 @@
 
-## Descrizione
-Breve introduzione alla macchina:
+LOGO
+## Introduzione
 - **Difficoltà:** Media
-- **Categoria:** Web Exploitation
-- **Piattaforma:** THM
+- Sistema operativo: Linux
 
-## Riepilogo dei Passi
-1. Ricognizione iniziale
-2. Identificazione di un servizio vulnerabile
-3. Sfruttamento
-4. Escalation dei privilegi
-5. Conclusione
 
-## Dettagli Tecnici
+## Enumeration
 
-### Passo 1: Ricognizione
+
+### NMAP
 ```bash\
-nmap -sC -sV -oN ./nmap/initial-scan.txt 10.10.10.X\
+nmap -sC -sV -oN output 10.10.10.X\
 ```
+
+## Exploitation
+
+
+## Privilege escalation
