@@ -186,7 +186,7 @@
 - [Cyber Defense e-Magazines](http://www.cyberdefensemagazine.com/e-magazines/)
 - [15 open-source cybersecurity tools you'll wish you'd known earlier - Help Net Security](https://www.helpnetsecurity.com/2024/01/04/open-source-cybersecurity-tools/)
 
-## Strumenti di Enumeraione e Sfruttamento
+## Enumeration e Exploitation
 - [vah13/extractTVpasswords · GitHub](https://github.com/vah13/extractTVpasswords/find/master?q=)
 - [curl POST examples · GitHub](https://gist.github.com/subfuzion/08c5d85437d5d4f00e58)
 - [DNS & Web Enumeration Reference](https://delta.navisec.io/web-enumeration-reference/)
