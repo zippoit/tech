@@ -1,4 +1,4 @@
-## 1) Information Gathering/reconaissance/enumeration
+## Information Gathering/reconaissance/enumeration
 
 ### OSINT
 - [GitHub - smicallef/spiderfoot](https://github.com/smicallef/spiderfoot?ref=d)
